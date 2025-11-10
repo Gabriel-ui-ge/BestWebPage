@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .form-box {
+            background-color: crimson;
+            padding: 60px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        input {
+            margin: 30px;
+            padding: 8px;
+            width: 90%;
+            border-radius: 5px;
+            border: none;
+        }
+        .buttons input {
+            width: auto;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <form>
+
+            <div>
+                <label for="fname">Full Name:</label>
+                <input type="fname" id="fname" name="fname" placeholder="Mohamadou Bamba Faye">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="BigRandy@gmail.com">
+            </div>
+
+            <div>
+                <label for="phone">Phone #:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(614)-557-6767"
+            </div>
+
+            <div>
+                <label for="bdate">Date of Birth:</label>
+                <input type="date" id="bdate" name="bdate">
+            </div>
+
+
+            <div>
+                <label for="Quantity">Quantity:</label>
+                <input type="number" id="Quantity" name="Quantity" min="1" max="99" value="1">
+            </div>
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="Male">Male</label>
+            <label><input type="radio" name="gender" value="Male">Female</label>
+            <label><input type="radio" name="gender" value="Male">Other</label>
+            </div>
+
+            <div>
+                <label for="adress">Adress</label>
+                <textarea id="adress" name="adress" rows="3" placeholder="Enter your address" required></textarea>
+            </div>
+
+            <div>
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                <option value="">Choose a course</option>
+                <option value="Math">Math</option>
+                <option value="Social Studies">Social Studies</option>
+                <option value="English">English</option>
+                <option value="Information Technology">Information Technology</option>
+                </select>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
